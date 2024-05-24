@@ -1,0 +1,301 @@
+/* style.css */
+
+/* Importação do reset.css (opcional) */
+@import url("reset.css");
+
+/* Estilos globais */
+/* Estilos globais */
+html {
+  font-size: 16px; /* Define 1rem = 16px */
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.6;
+  background-color: #d1fae5;
+  color: #064e3b;
+  padding: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+}
+
+a {
+  color: inherit;
+}
+
+/* Container principal */
+.container {
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* Cabeçalho */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid #064e3b;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  color: #064e3b;
+}
+
+header h1 {
+  font-size: 2rem;
+}
+
+header nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+header nav a {
+  color: #064e3b;
+  text-decoration: none;
+  margin-left: 1rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 1rem;
+  transition: background-color 0.3s;
+}
+
+header nav a:hover {
+  text-decoration: none;
+  background-color: #fff;
+}
+
+/* Seção de Informações Gerais */
+.section-infos {
+  border: 2px solid #064e3b;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+}
+
+.section-infos h2 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.section-infos h3 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.section-infos .badge {
+  font-size: 0.8rem;
+  display: inline-block;
+  border-radius: 1rem;
+  border: 1px solid #064e3b;
+  padding: 0.25rem 0.75rem;
+  margin: 0.25rem 0.25rem 0.25rem 0;
+}
+
+.section-infos .alert {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  margin: 1rem 0;
+}
+
+.section-infos .alert i {
+  padding: 0 1rem 0 0.5rem;
+}
+
+.section-infos .alert p {
+  font-size: 0.9rem;
+}
+
+/* Estilo da lista personalizada */
+.lista-bonita {
+  list-style-type: none; /* Remove marcadores padrão */
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.lista-bonita li {
+  border: 1px solid #064e3b;
+  margin: 0.5rem 0; /* Espaçamento entre itens */
+  padding: 0.5rem; /* Espaçamento interno dos itens */
+  border-radius: 0.5rem; /* Bordas arredondadas */
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.lista-bonita li::before {
+  content: "\f013"; /* Ícone FontAwesome */
+  font-family: "Font Awesome 5 Free"; /* Fonte do ícone */
+  font-weight: 900; /* Peso da fonte */
+  margin-right: 1rem; /* Espaçamento entre ícone e texto */
+}
+
+.questionario {
+  display: flex;
+  flex-direction: column;
+}
+
+.questionario .card {
+  border: 1px solid #064e3b;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+}
+
+.questionario .card h4 {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.questionario .card p,
+.card a {
+  font-size: 1rem;
+  color: #003d14;
+}
+
+.questionario .card a {
+  text-decoration: none;
+  color: #1a73e8;
+}
+
+.questionario .card a:hover {
+  text-decoration: underline;
+}
+
+.questionario .questionario-lista {
+  list-style-type: none; /* Remove marcadores padrão */
+  padding-left: 0;
+}
+
+.questionario .questionario-lista li {
+  margin: 0.5rem 0; /* Espaçamento entre itens */
+  padding: 0.5rem; /* Espaçamento interno dos itens */
+  display: flex;
+  align-items: center;
+}
+
+.questionario .questionario-lista li::before {
+  content: "\f4d6"; /* Ícone FontAwesome */
+  font-family: "Font Awesome 5 Free"; /* Fonte do ícone */
+  font-weight: 900; /* Peso da fonte */
+  margin-right: 1rem; /* Espaçamento entre ícone e texto */
+}
+
+/* Footer */
+.footer {
+  border: 2px solid #064e3b;
+  text-align: center;
+  padding: 2rem 0 1rem 0;
+  margin-top: 2rem;
+  border-radius: 0.5rem;
+}
+
+.footer nav {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer nav a {
+  text-decoration: none;
+  padding: 0.25rem 0.5rem;
+  border-radius: 1rem;
+  transition: background-color 0.3s;
+}
+
+.footer nav a:hover {
+  background-color: #fff;
+}
+
+.footer-social {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.footer-social a {
+  transition: transform 0.3s;
+}
+
+.footer-social a:hover {
+  transform: scale(1.2);
+}
+
+.footer-copy {
+  font-size: 0.875rem;
+}
+
+/* Estilos responsivos */
+@media (min-width: 48rem) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  header nav a {
+    margin-left: 2rem;
+  }
+
+  .section-infos h2 {
+    font-size: 2.5rem;
+  }
+
+  header nav {
+    flex-direction: row;
+    align-items: flex-end;
+  }
+
+  .lista-bonita {
+    flex-direction: row;
+    flex-wrap: wrap; /* Quebra a linha dos itens quando não cabem mais no container */
+    justify-content: space-between; /* Distribui os itens no espaço disponível */
+  }
+
+  .lista-bonita li {
+    font-size: 1.125rem; /* Ajuste do tamanho da fonte */
+    padding: 0.75rem; /* Ajuste do espaçamento interno */
+    width: calc(
+      50% - 0.5rem
+    ); /* Ajusta a largura dos itens para ocupar metade do espaço, considerando o margin */
+    box-sizing: border-box; /* Inclui padding e border na largura total */
+  }
+
+  .questionario {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .questionario .card {
+    width: calc(50% - 0.5rem);
+    box-sizing: border-box;
+  }
+
+  .footer nav {
+    gap: 2rem;
+    flex-direction: row;
+    align-items: flex-end;
+  }
+
+  .footer-social a {
+    font-size: 2rem;
+  }
+}
