@@ -48,8 +48,10 @@ header {
   background-color: #bdddca;
 }
 
-header h1 {
+header .logo h1 {
   font-size: 2rem;
+  font-family: "Playfair Display", serif;
+  font-weight: 900;
 }
 
 header nav {
