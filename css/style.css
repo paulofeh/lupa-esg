@@ -91,6 +91,12 @@ header nav a:hover {
   margin-bottom: 0.5rem;
 }
 
+h5 {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 1rem;
+}
+
 .section-infos .badge {
   font-size: 0.8rem;
   display: inline-block;
@@ -100,21 +106,23 @@ header nav a:hover {
   background-color: #ddeee3;
 }
 
-.section-infos .alert {
+.alert {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #ddeee3;
   padding: 0.5rem;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   margin: 1rem 0;
 }
 
-.section-infos .alert i {
+.alert i {
   padding: 0 1rem 0 0.5rem;
+  color: #DD403A;
+  font-size: 1.5rem;
 }
 
-.section-infos .alert p {
+.alert p {
   font-size: 0.9rem;
 }
 
@@ -141,6 +149,7 @@ header nav a:hover {
   font-family: "Font Awesome 5 Free"; /* Fonte do ícone */
   font-weight: 900; /* Peso da fonte */
   margin-right: 1rem; /* Espaçamento entre ícone e texto */
+  font-size: 1.5rem;
 }
 
 .questionario {
@@ -148,7 +157,7 @@ header nav a:hover {
   flex-direction: column;
 }
 
-.questionario .card {
+.card {
   border: 1px solid #064e3b;
   padding: 1rem;
   border-radius: 0.5rem;
@@ -156,45 +165,120 @@ header nav a:hover {
   margin-bottom: 1rem;
 }
 
-.questionario .card h4 {
+.card h4 {
   font-size: 1.1rem;
   font-weight: 500;
   margin-bottom: 0.5rem;
 }
 
-.questionario .card p,
-.card a {
+.card p i {
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+.card p {
   font-size: 1rem;
   color: #003d14;
 }
 
-.questionario .card a {
+.card a {
   text-decoration: none;
   color: #1a73e8;
 }
 
-.questionario .card a:hover {
+.card a:hover {
   text-decoration: underline;
 }
 
-.questionario .questionario-lista {
+.resposta {
+  display: flex;
+  align-items: center; 
+  gap: 0.5rem;
+}
+
+.resposta i {
+  font-size: 1.5rem; /* Tamanho do ícone */
+}
+
+.resposta p {
+  margin: 0; /* Remove a margem padrão do parágrafo */
+  font-size: 1rem; /* Tamanho do texto */
+}
+
+.icone-sim {
+  color: #28a745; /* Cor verde */
+}
+
+.icone-nao {
+  color: #DD403A; /* Cor vermelha */
+}
+
+.icone-amarelo {
+  color: #FFB627;
+}
+
+.icone-branco {
+  color: #FFFFFF;
+}
+
+.icone-pardo {
+  color: #8B4513;
+}
+
+.icone-preto {
+  color: #000000;
+}
+
+.icone-indigena {
+  color: #dd403a;
+}
+
+.icone-azul {
+  color: #1a73e8;
+}
+
+.icone-rosa {
+  color: #e91e63;
+}
+
+.icone-roxo {
+  color: #8a2be2;
+}
+
+.questionario-lista {
   list-style-type: none; /* Remove marcadores padrão */
   padding-left: 0;
 }
 
-.questionario .questionario-lista li {
+.questionario-lista li {
   margin: 0.5rem 0; /* Espaçamento entre itens */
   padding: 0.5rem; /* Espaçamento interno dos itens */
   display: flex;
   align-items: center;
 }
 
-.questionario .questionario-lista li::before {
+.questionario-lista li::before {
   content: "\f4d6"; /* Ícone FontAwesome */
   font-family: "Font Awesome 5 Free"; /* Fonte do ícone */
   font-weight: 900; /* Peso da fonte */
   margin-right: 1rem; /* Espaçamento entre ícone e texto */
+  font-size: 1.5rem;
 }
+
+.pictogramas {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-legenda span {
+  font-size: 0.8rem;
+  margin: 0 0.5rem;
+}
+
+.grafico i {
+  padding: 0.2rem 0.2rem 0.2rem 0;
+}
+
 
 /* Footer */
 .footer {
@@ -285,6 +369,17 @@ header nav a:hover {
   }
 
   .questionario .card {
+    width: calc(50% - 0.5rem);
+    box-sizing: border-box;
+  }
+
+  .pictogramas {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .pictogramas .card {
     width: calc(50% - 0.5rem);
     box-sizing: border-box;
   }
