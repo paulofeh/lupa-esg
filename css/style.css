@@ -4,7 +4,6 @@
 @import url("reset.css");
 
 /* Estilos globais */
-/* Estilos globais */
 html {
   font-size: 16px; /* Define 1rem = 16px */
 }
@@ -91,12 +90,12 @@ header nav a:hover {
   margin-bottom: 0.5rem;
 }
 
-h5 {
+.section-infos h5 {
   font-size: 1rem;
-  font-weight: 500;
   margin-top: 1rem;
 }
 
+/* Estilo das etiquetas de dados */
 .section-infos .badge {
   font-size: 0.8rem;
   display: inline-block;
@@ -106,6 +105,7 @@ h5 {
   background-color: #ddeee3;
 }
 
+/* Estilo das mensagens de alerta */
 .alert {
   display: flex;
   justify-content: space-between;
@@ -118,7 +118,7 @@ h5 {
 
 .alert i {
   padding: 0 1rem 0 0.5rem;
-  color: #DD403A;
+  color: #dd403a;
   font-size: 1.5rem;
 }
 
@@ -128,7 +128,7 @@ h5 {
 
 /* Estilo da lista personalizada */
 .lista-bonita {
-  list-style-type: none; /* Remove marcadores padrão */
+  list-style-type: none;
   padding-left: 0;
   display: flex;
   flex-direction: column;
@@ -136,9 +136,9 @@ h5 {
 
 .lista-bonita li {
   border: 1px solid #064e3b;
-  margin: 0.5rem 0; /* Espaçamento entre itens */
-  padding: 0.5rem; /* Espaçamento interno dos itens */
-  border-radius: 0.5rem; /* Bordas arredondadas */
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
   display: flex;
   align-items: center;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -147,16 +147,18 @@ h5 {
 .lista-bonita li::before {
   content: "\f013"; /* Ícone FontAwesome */
   font-family: "Font Awesome 5 Free"; /* Fonte do ícone */
-  font-weight: 900; /* Peso da fonte */
-  margin-right: 1rem; /* Espaçamento entre ícone e texto */
+  font-weight: 900;
+  margin-right: 1rem;
   font-size: 1.5rem;
 }
 
+/* Questionário ESG */
 .questionario {
   display: flex;
   flex-direction: column;
 }
 
+/* Estilo dos cards do questionário */
 .card {
   border: 1px solid #064e3b;
   padding: 1rem;
@@ -190,39 +192,77 @@ h5 {
   text-decoration: underline;
 }
 
+/* Estilo das respostas do questionário */
 .resposta {
   display: flex;
-  align-items: center; 
+  align-items: center;
   gap: 0.5rem;
 }
 
 .resposta i {
-  font-size: 1.5rem; /* Tamanho do ícone */
+  font-size: 1.5rem;
 }
 
 .resposta p {
-  margin: 0; /* Remove a margem padrão do parágrafo */
-  font-size: 1rem; /* Tamanho do texto */
+  margin: 0;
+  font-size: 1rem;
 }
 
+/* Estilo das listas de itens */
+.questionario-lista {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.questionario-lista li {
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.questionario-lista li::before {
+  content: "\f4d6"; /* Ícone FontAwesome */
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  margin-right: 1rem;
+  font-size: 1.5rem;
+}
+
+/* Estilo dos pictogramas */
+.pictogramas {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-legenda span {
+  font-size: 0.8rem;
+  margin: 0 0.5rem;
+}
+
+.grafico i {
+  padding: 0.2rem 0.2rem 0.2rem 0;
+}
+
+/* Cores dos ícones */
 .icone-sim {
   color: #28a745; /* Cor verde */
 }
 
 .icone-nao {
-  color: #DD403A; /* Cor vermelha */
+  color: #dd403a; /* Cor vermelha */
 }
 
 .icone-amarelo {
-  color: #FFB627;
+  color: #ffb627;
 }
 
 .icone-branco {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .icone-pardo {
-  color: #8B4513;
+  color: #8b4513;
 }
 
 .icone-preto {
@@ -245,42 +285,7 @@ h5 {
   color: #8a2be2;
 }
 
-.questionario-lista {
-  list-style-type: none; /* Remove marcadores padrão */
-  padding-left: 0;
-}
-
-.questionario-lista li {
-  margin: 0.5rem 0; /* Espaçamento entre itens */
-  padding: 0.5rem; /* Espaçamento interno dos itens */
-  display: flex;
-  align-items: center;
-}
-
-.questionario-lista li::before {
-  content: "\f4d6"; /* Ícone FontAwesome */
-  font-family: "Font Awesome 5 Free"; /* Fonte do ícone */
-  font-weight: 900; /* Peso da fonte */
-  margin-right: 1rem; /* Espaçamento entre ícone e texto */
-  font-size: 1.5rem;
-}
-
-.pictogramas {
-  display: flex;
-  flex-direction: column;
-}
-
-.card-legenda span {
-  font-size: 0.8rem;
-  margin: 0 0.5rem;
-}
-
-.grafico i {
-  padding: 0.2rem 0.2rem 0.2rem 0;
-}
-
-
-/* Footer */
+/* Rodapé */
 .footer {
   background-color: #bdddca;
   text-align: center;
@@ -328,7 +333,7 @@ h5 {
   font-size: 0.875rem;
 }
 
-/* Estilos responsivos */
+/* Estilos responsivos para desktops e laptops */
 @media (min-width: 48rem) {
   header h1 {
     font-size: 2rem;
