@@ -1,0 +1,222 @@
+[
+  {
+    "razao_social": "Afluente Transmissão De Energia Elétrica S/A",
+    "setor": "Utilidade Pública",
+    "subsetor": "Energia Elétrica",
+    "segmento": "Energia Elétrica",
+    "divulga_relatorio": true,
+    "matriz_materialidade": true,
+    "ods": true,
+    "tcfd": true,
+    "inventario_gee": true
+  },
+  {
+    "razao_social": "Alfa Holdings S.A.",
+    "setor": "Financeiro",
+    "subsetor": "Holdings Diversificadas",
+    "segmento": "Holdings Diversificadas",
+    "divulga_relatorio": false,
+    "matriz_materialidade": false,
+    "ods": false,
+    "tcfd": false,
+    "inventario_gee": false
+  },
+  {
+    "razao_social": "Automob S.A.",
+    "setor": "Consumo Cíclico",
+    "subsetor": "Automóveis E Motocicletas",
+    "segmento": "Automóveis",
+    "divulga_relatorio": true,
+    "matriz_materialidade": true,
+    "ods": true,
+    "tcfd": false,
+    "inventario_gee": true
+  },
+  {
+    "razao_social": "Bluefit Academias De Ginástica E Participações S.A.",
+    "setor": "Consumo Cíclico",
+    "subsetor": "Entretenimento",
+    "segmento": "Academias",
+    "divulga_relatorio": false,
+    "matriz_materialidade": false,
+    "ods": true,
+    "tcfd": false,
+    "inventario_gee": false
+  },
+  {
+    "razao_social": "Boa Safra Sementes S.A.",
+    "setor": "Consumo Não Cíclico",
+    "subsetor": "Agropecuária",
+    "segmento": "Agricultura",
+    "divulga_relatorio": true,
+    "matriz_materialidade": true,
+    "ods": true,
+    "tcfd": true,
+    "inventario_gee": true
+  },
+  {
+    "razao_social": "Brasilagro - Cia Bras De Prop Agricolas",
+    "setor": "Consumo Não Cíclico",
+    "subsetor": "Agropecuária",
+    "segmento": "Insumos Agrícolas",
+    "divulga_relatorio": false,
+    "matriz_materialidade": false,
+    "ods": false,
+    "tcfd": false,
+    "inventario_gee": false
+  },
+  {
+    "razao_social": "Brf S.A.",
+    "setor": "Consumo Não Cíclico",
+    "subsetor": "Alimentos Processados",
+    "segmento": "Carnes E Derivados",
+    "divulga_relatorio": true,
+    "matriz_materialidade": true,
+    "ods": true,
+    "tcfd": true,
+    "inventario_gee": true
+  },
+  {
+    "razao_social": "Cagece - Cia De Agua E Esgoto Do Ceara",
+    "setor": "Utilidade Pública",
+    "subsetor": "Água E Saneamento",
+    "segmento": "Água E Saneamento",
+    "divulga_relatorio": true,
+    "matriz_materialidade": true,
+    "ods": true,
+    "tcfd": false,
+    "inventario_gee": true
+  },
+  {
+    "razao_social": "Caixa Adm Div Pub Estadual Sa",
+    "setor": "Financeiro",
+    "subsetor": "Serviços Financeiros Diversos",
+    "segmento": "Serviços Financeiros Diversos",
+    "divulga_relatorio": false,
+    "matriz_materialidade": false,
+    "ods": false,
+    "tcfd": false,
+    "inventario_gee": false
+  },
+  {
+    "razao_social": "Camil Alimentos S.A.",
+    "setor": "Consumo Não Cíclico",
+    "subsetor": "Alimentos Processados",
+    "segmento": "Alimentos Diversos",
+    "divulga_relatorio": true,
+    "matriz_materialidade": true,
+    "ods": true,
+    "tcfd": true,
+    "inventario_gee": true
+  },
+  {
+    "razao_social": "Cemig Distribuicao S.A.",
+    "setor": "Utilidade Pública",
+    "subsetor": "Energia Elétrica",
+    "segmento": "Energia Elétrica",
+    "divulga_relatorio": true,
+    "matriz_materialidade": true,
+    "ods": true,
+    "tcfd": true,
+    "inventario_gee": true
+  },
+  {
+    "razao_social": "Cemig Geracao E Transmissao S.A.",
+    "setor": "Utilidade Pública",
+    "subsetor": "Energia Elétrica",
+    "segmento": "Geração e Transmissão de Energia",
+    "divulga_relatorio": true,
+    "matriz_materialidade": true,
+    "ods": true,
+    "tcfd": true,
+    "inventario_gee": true
+  },
+  {
+    "razao_social": "Centrais Elétricas Do Norte Do Brasil S.A.",
+    "setor": "Utilidade Pública",
+    "subsetor": "Energia Elétrica",
+    "segmento": "Energia Elétrica",
+    "divulga_relatorio": false,
+    "matriz_materialidade": false,
+    "ods": false,
+    "tcfd": false,
+    "inventario_gee": false
+  },
+  {
+    "razao_social": "Cerradinho Bioenergia S.A.",
+    "setor": "Consumo Não Cíclico",
+    "subsetor": "Bebidas",
+    "segmento": "Bioenergia",
+    "divulga_relatorio": true,
+    "matriz_materialidade": true,
+    "ods": true,
+    "tcfd": true,
+    "inventario_gee": true
+  },
+  {
+    "razao_social": "Cia Brasileira De Distribuicao",
+    "setor": "Consumo Cíclico",
+    "subsetor": "Comércio",
+    "segmento": "Varejo",
+    "divulga_relatorio": true,
+    "matriz_materialidade": true,
+    "ods": true,
+    "tcfd": true,
+    "inventario_gee": true
+  },
+  {
+    "razao_social": "Cia Celg De Participacoes - Celgpar",
+    "setor": "Utilidade Pública",
+    "subsetor": "Energia Elétrica",
+    "segmento": "Energia Elétrica",
+    "divulga_relatorio": false,
+    "matriz_materialidade": false,
+    "ods": false,
+    "tcfd": false,
+    "inventario_gee": false
+  },
+  {
+    "razao_social": "Cia De Ger. E Trans. De Energia Elétrica Do Sul Do Brasil",
+    "setor": "Utilidade Pública",
+    "subsetor": "Energia Elétrica",
+    "segmento": "Geração e Transmissão de Energia",
+    "divulga_relatorio": true,
+    "matriz_materialidade": true,
+    "ods": true,
+    "tcfd": true,
+    "inventario_gee": true
+  },
+  {
+    "razao_social": "Cia Eletricidade Est. Da Bahia - Coelba",
+    "setor": "Utilidade Pública",
+    "subsetor": "Energia Elétrica",
+    "segmento": "Distribuição de Energia",
+    "divulga_relatorio": true,
+    "matriz_materialidade": true,
+    "ods": true,
+    "tcfd": false,
+    "inventario_gee": true
+  },
+  {
+    "razao_social": "Cia Energetica De Minas Gerais - Cemig",
+    "setor": "Utilidade Pública",
+    "subsetor": "Energia Elétrica",
+    "segmento": "Energia Elétrica",
+    "divulga_relatorio": true,
+    "matriz_materialidade": true,
+    "ods": true,
+    "tcfd": true,
+    "inventario_gee": true
+  },
+  {
+    "razao_social": "Cia Energetica De Pernambuco - Celpe",
+    "setor": "Utilidade Pública",
+    "subsetor": "Energia Elétrica",
+    "segmento": "Distribuição de Energia",
+    "divulga_relatorio": false,
+    "matriz_materialidade": false,
+    "ods": false,
+    "tcfd": false,
+    "inventario_gee": false
+  }
+]
