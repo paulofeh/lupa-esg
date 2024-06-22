@@ -22,6 +22,7 @@
       name="description"
       content="Plataforma que busca e organiza informações públicas fornecidas por empresas brasileiras sobre práticas relacionadas à pauta ESG - Ambiental, Social e Governança."
     />
+    <script src="js/scripts.js" defer></script>
     <title>Todas as empresas | lupa(ESG)</title>
   </head>
   <body>
@@ -40,21 +41,59 @@
       <main>
         <section class="section-infos">
           <h2>Todas as empresas</h2>
-          <p class="badge">Código CVM: 25917</p>
-          <p class="badge">CNPJ: 33.453.598/0001-23</p>
-          <p class="badge">Data de referência: 31/03/2024</p>
-          <p class="badge">Data de recebimento: 26/03/2024</p>
-          <p class="badge">Versão: 12</p>
+          <div id="filtros" class="filtros-empresas">
+            <div class="filter-container">
+              <input
+                type="text"
+                id="caixa-busca"
+                placeholder="Buscar pela razão social..."
+              />
 
-          <div class="alert">
-            <i class="fa-solid fa-triangle-exclamation"></i>
-            <p>
-              Atenção! Parte das informações abaixo foi gerada com o uso de IA
-              generativa. Assim, é sempre possível que ocorram alucinações. Para
-              informações oficiais e atualizadas, consulte sempre o site da CVM,
-              além das páginas das próprias empresas.
-            </p>
+              <div class="select-container">
+                <select id="setor-filtro">
+                  <option value="">Selecione o Setor</option>
+                </select>
+                <select id="subsetor-filtro">
+                  <option value="">Selecione o Subsetor</option>
+                </select>
+                <select id="segmento-filtro">
+                  <option value="">Selecione o Segmento</option>
+                </select>
+              </div>
+              <div class="boolean-container">
+                <div>
+                  <input type="checkbox" id="filtro-divulga" />
+                  <label for="filtro-divulga">Publica relatório ESG?</label>
+                </div>
+                <div>
+                  <input type="checkbox" id="filtro-matriz" />
+                  <label for="filtro-matriz"
+                    >Considera matriz de materialidade?</label
+                  >
+                </div>
+                <div>
+                  <input type="checkbox" id="filtro-ods" />
+                  <label for="filtro-ods">Considera os ODS da ONU?</label>
+                </div>
+                <div>
+                  <input type="checkbox" id="filtro-tcfd" />
+                  <label for="filtro-tcfd"
+                    >Considera recomendações da TCDF?</label
+                  >
+                </div>
+                <div>
+                  <input type="checkbox" id="filtro-inventario" />
+                  <label for="filtro-inventario"
+                    >Divulga inventário de gases do efeito estufa?</label>
+                </div>
+              </div>
+              <button id="reset-button" style="display: none;">Resetar Busca</button> <!-- Esconde o botão inicialmente -->
+            </div>
           </div>
+        </section>
+
+        <section class="section-infos">
+          <div id="lista-empresas"></div>
         </section>
       </main>
     </div>
