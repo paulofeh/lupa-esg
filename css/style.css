@@ -17,8 +17,6 @@ body {
   overflow-y: scroll;
 }
 
-h1,
-h2,
 h3,
 h4,
 h5,
@@ -40,6 +38,7 @@ a {
 /* Cabeçalho */
 header {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: top;
   padding: 1rem;
@@ -51,20 +50,18 @@ header {
 .logo h1 {
   font-size: 2rem;
   font-family: "Playfair Display", serif;
-  font-weight: 800;
+  font-weight: 900;
 }
 
 /* Navegação */
 header nav {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
 }
 
 header nav a {
   text-decoration: none;
-  margin-left: 1rem;
-  padding: 0.25rem 0.5rem;
+  padding-top: 0.25rem;
   border-radius: 1rem;
   transition: 0.3s;
   font-family: "Karla", sans-serif;
@@ -75,7 +72,6 @@ header nav a {
 
 header nav a:hover {
   text-decoration: none;
-  background-color: #ddeee3;
 }
 
 /* Seções de Informações Gerais */
@@ -87,11 +83,11 @@ header nav a:hover {
 }
 
 .section-infos h2 {
+  font-family: "Playfair Display", serif;
   font-size: 2.5rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
   font-weight: 700;
-  letter-spacing: -0.1rem;
-  text-transform: uppercase;
+  line-height: 100%;
 }
 
 .section-infos h3 {
@@ -103,13 +99,14 @@ header nav a:hover {
 }
 
 /* Estilo das etiquetas de dados */
-.section-infos .badge {
+.badge {
   font-size: 0.8rem;
   display: inline-block;
   border-radius: 1rem;
   padding: 0.25rem 0.75rem;
   margin: 0.25rem 0.25rem 0.25rem 0;
   background-color: #ddeee3;
+  align-items: center;
 }
 
 /* Estilo das mensagens de alerta */
@@ -381,7 +378,7 @@ header nav a:hover {
 
 .boolean-container div {
   display: flex;
-  align-items: center;
+  align-items: top;
 }
 
 .boolean-container input[type="checkbox"] {
@@ -416,15 +413,15 @@ header nav a:hover {
 .filtros-empresas label {
   display: block;
   margin-left: 5px;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 
 .filtros-empresas input[type="checkbox"] {
   width: 20px;
-    height: 20px;
-    accent-color: #064e3b; /* Muda a cor da caixa de seleção no navegador suportado */
-    margin-right: 0.5rem; /* Espaço entre o checkbox e o label */
-    cursor: pointer; /* Muda o cursor para pointer ao passar sobre o checkbox */
+  height: 20px;
+  accent-color: #064e3b; /* Muda a cor da caixa de seleção no navegador suportado */
+  margin-right: 0.5rem; /* Espaço entre o checkbox e o label */
+  cursor: pointer; /* Muda o cursor para pointer ao passar sobre o checkbox */
 }
 
 .filtros-empresas button {
@@ -441,23 +438,75 @@ header nav a:hover {
   background-color: #0056b3;
 }
 
+.company-info {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1rem 0 1rem;
+  border: 1px solid #064e3b;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+}
+
+.company-info h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.company-details {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.company-boolean {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.company-boolean i {
+  display: inline-block;
+  font-size: 1rem;
+  width: 1.5rem;
+}
+
+#total-resultados {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  text-align: right;
+}
+
 /* Estilos responsivos para desktops e laptops */
 @media (min-width: 48rem) {
+  header {
+    flex-direction: row;
+    align-items: center;
+  }
+
   header h1 {
     font-size: 2rem;
-  }
-
-  header nav a {
-    margin-left: 2rem;
-  }
-
-  .section-infos h2 {
-    font-size: 3rem;
   }
 
   header nav {
     flex-direction: row;
     align-items: flex-end;
+  }
+
+  header nav a {
+    margin-left: 2rem;
+    padding: 0 1rem;
+    border-radius: 1rem;
+  }
+
+  header nav a:hover {
+    background-color: #ddeee3;
+  }
+
+  .section-infos h2 {
+    font-size: 3rem;
   }
 
   .lista-areas {
@@ -520,8 +569,30 @@ header nav a:hover {
     align-self: flex-end;
     margin-left: 20px;
   }
- 
+
   .boolean-container {
-    grid-template-columns: repeat(3, 1fr); /* 3 colunas para dispositivos maiores */
-}
+    grid-template-columns: repeat(
+      3,
+      1fr
+    ); /* 3 colunas para dispositivos maiores */
+  }
+
+  .company-details {
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .company-details p {
+    font-size: 0.9rem;
+  }
+
+  .company-boolean {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .company-boolean i {
+    font-size: 1rem;
+    width: 1.5rem;
+  }
 }

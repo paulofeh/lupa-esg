@@ -40,7 +40,7 @@
 
       <main>
         <section class="section-infos">
-          <h2>Todas as empresas</h2>
+          <h2>Buscar empresa</h2>
           <div id="filtros" class="filtros-empresas">
             <div class="filter-container">
               <input
@@ -84,15 +84,20 @@
                 <div>
                   <input type="checkbox" id="filtro-inventario" />
                   <label for="filtro-inventario"
-                    >Divulga inventário de gases do efeito estufa?</label>
+                    >Divulga inventário de gases do efeito estufa (GEE)?</label
+                  >
                 </div>
               </div>
-              <button id="reset-button" style="display: none;">Resetar Busca</button> <!-- Esconde o botão inicialmente -->
+              <button id="reset-button" style="display: none">
+                Limpar Busca
+              </button>
+              <!-- Esconde o botão inicialmente -->
             </div>
           </div>
         </section>
 
         <section class="section-infos">
+          <div id="total-resultados">0 empresas encontradas</div>
           <div id="lista-empresas"></div>
         </section>
       </main>

@@ -9,26 +9,51 @@ fetch("data/empresas.json")
 function displayCompanies(companies) {
   const listElement = document.getElementById("lista-empresas");
   listElement.innerHTML = ""; // Limpa a lista existente
+
   companies.forEach((company) => {
     const companyDiv = document.createElement("div");
     companyDiv.className = "company-info"; // Classe para estilização
     companyDiv.innerHTML = `
-            <h2>${company.razao_social}</h2>
+        <h3>${company.razao_social}</h3>
+        <div class="company-details">
             <p><strong>Setor:</strong> ${company.setor}</p>
             <p><strong>Subsetor:</strong> ${company.subsetor}</p>
-            <p><strong>Segmento:</strong> ${company.segmento}</p>
-            ${company.divulga_relatorio ? "<p>Divulga Relatório</p>" : ""}
+            <p><strong>Segmento:</strong> ${company.segmento}</p></div>
+            <div class="company-boolean">
             ${
-              company.matriz_materialidade
-                ? "<p>Com Matriz de Materialidade</p>"
+              company.divulga_relatorio
+                ? '<p class="badge"><i class="fa-solid fa-file-signature"></i> Divulga Relatório</p>'
                 : ""
             }
-            ${company.ods ? "<p>Contribui para os ODS</p>" : ""}
-            ${company.tcfd ? "<p>Adere ao TCFD</p>" : ""}
-            ${company.inventario_gee ? "<p>Realiza Inventário de GEE</p>" : ""}
-        `;
+            ${
+              company.matriz_materialidade
+                ? '<p class="badge"><i class="fa-solid fa-table-cells-large"></i> Matriz de Materialidade</p>'
+                : ""
+            }
+            ${
+              company.ods
+                ? '<p class="badge"><i class="fa-solid fa-earth-americas"></i> Considera os ODS</p>'
+                : ""
+            }
+            ${
+              company.tcfd
+                ? '<p class="badge"><i class="fa-solid fa-chart-line"></i> Adere ao TCFD</p>'
+                : ""
+            }
+            ${
+              company.inventario_gee
+                ? '<p class="badge"><i class="fa-solid fa-temperature-arrow-up"></i> Realiza Inventário de GEE</p>'
+                : ""
+            }</div>
+        </div>
+    `;
     listElement.appendChild(companyDiv);
   });
+
+  // Atualizar o total de resultados
+  document.getElementById(
+    "total-resultados"
+  ).textContent = `${companies.length} empresas encontradas`;
 }
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -108,7 +133,7 @@ function populateSelect(selectElement, options) {
   const currentValue = selectElement.value;
   // Mantém a opção inicial existente
   const initialOption = selectElement.querySelector('option[value=""]');
-  selectElement.innerHTML = ''; // Limpa todas as opções
+  selectElement.innerHTML = ""; // Limpa todas as opções
   if (initialOption) {
     selectElement.appendChild(initialOption); // Re-adiciona a opção inicial
   }
@@ -210,18 +235,20 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function resetFilters(companies) {
   // Limpar campos de texto e caixas de seleção
-  document.getElementById('caixa-busca').value = '';
-  document.getElementById('setor-filtro').value = '';
-  document.getElementById('subsetor-filtro').value = '';
-  document.getElementById('segmento-filtro').value = '';
-  document.querySelectorAll('input[type=checkbox]').forEach(checkbox => checkbox.checked = false);
+  document.getElementById("caixa-busca").value = "";
+  document.getElementById("setor-filtro").value = "";
+  document.getElementById("subsetor-filtro").value = "";
+  document.getElementById("segmento-filtro").value = "";
+  document
+    .querySelectorAll("input[type=checkbox]")
+    .forEach((checkbox) => (checkbox.checked = false));
 
   // Repopular os filtros e redisplay todas as empresas
   populateFilterOptions(companies);
   displayCompanies(companies);
 
   // Esconder o botão de resetar busca
-  document.getElementById('reset-button').style.display = 'none';
+  document.getElementById("reset-button").style.display = "none";
 }
 
 document.addEventListener("DOMContentLoaded", function () {
